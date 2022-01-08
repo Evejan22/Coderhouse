@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  
+}
+@font-face {
+  font-family: "LuxuriousRoman";
+  src: url("./LuxuriousRoman.ttf");
+}
+
+@font-face {
+  font-family: "VujahdayScript";
+  src: url("./VujahdayScript.ttf");
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  background-color: #e6b0aa;
+}
+
+.logo {
+  width: 5%;
+  border-radius: 50%;
+}
+
+.logo img {
+  width: 100%;
+  border-radius: 50%;
+}
+.lista {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 90%;
+  color: #7f8c8d;
+  align-items: center;
+}
+.item-active{
+  color: chartreuse;
+  font-weight: bold;
+}
+.carrito {
+  width: 5%;
+  display: flex;
+  align-items: center;
+}
+.titulo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3px;
+}
+.textoTitulo {
+  font-family: LuxuriousRoman;
+}
+.sobreTitulo {
+  font-family: VujahdayScript;
+  margin-top: 2px;
+  margin-bottom: 3px;
+}
+.historia {
+  width: 100%;
+  display: flex;
+}
+.textoHistoria {
+  margin-left: 3%;
+  margin-right: 3%;
+  border: solid #e6b0aa 2px;
+  border-radius: 10px;
+  padding: 5px;
+}
+.fotos {
+  width: 100%;
+}
+.fotos div {
+  /* cualquier altura mayor que el total de sumar la anchura de las img */
+  width: 100%;
+  margin-bottom: 5px;
+  /* para evitar el margen superior de la primera fila*/
+}
+.columna {
+  display: flex;
+  justify-content: space-around;
+}
+.columna div {
+  border: solid black 2px;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.columna img {
+  height: 300px;
+  padding: 4px;
+}
