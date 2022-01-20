@@ -2,7 +2,10 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
-  
+}
+body{
+  background: rgb(230,176,170);
+  background: linear-gradient(180deg, rgba(230,176,170,1) 0%, rgba(255,255,255,1) 100%);
 }
 @font-face {
   font-family: "LuxuriousRoman";
@@ -84,17 +87,53 @@
   /* para evitar el margen superior de la primera fila*/
 }
 .columna {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    grid-gap: 1rem;
+    padding: 1rem;
+    
+ 
 }
 .columna div {
   border: solid black 2px;
-  width: 20%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .columna img {
-  height: 300px;
+  height: 200px;
   padding: 4px;
+}
+.fotos div div img:hover{
+ transform: scale(2);
+ transition-duration: 2s;
+ 
+}
+@media only screen and (max-width: 700px){
+  .lista {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 90%;
+    color: #7f8c8d;
+    align-items: center;
+  }
+  
+  .columna{
+    display: flex;
+    flex-direction: column;
+    background-color: coral;
+  }
+  .columna div {
+    border: solid black 2px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .formulario{
+    display: flex;
+    flex-direction: column;
+  }
 }
