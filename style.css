@@ -9,12 +9,12 @@ body{
 }
 @font-face {
   font-family: "LuxuriousRoman";
-  src: url("./LuxuriousRoman.ttf");
+  src: url("./Fonts/LuxuriousRoman.ttf");
 }
 
 @font-face {
   font-family: "VujahdayScript";
-  src: url("./VujahdayScript.ttf");
+  src: url("./Fonts/VujahdayScript.ttf");
 }
 
 .navbar {
