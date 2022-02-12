@@ -36,10 +36,13 @@
       }
     }
   
+    @mixin history($width, $display, $margin) {
+      width: $width;
+      display: $display;
+      margin-top: $margin;
+    }
     .historia {
-      width: 100%;
-      display: flex;
-      margin-top: 20px;
+      @include history(100%, flex , 20px);
       .textoHistoria {
         margin-left: 3%;
         margin-right: 3%;

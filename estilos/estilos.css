@@ -1,11 +1,11 @@
 @font-face {
   font-family: "LuxuriousRoman";
-  src: url("./Fonts/LuxuriousRoman.ttf");
+  src: url("../Fonts/LuxuriousRoman.ttf");
 }
 
 @font-face {
   font-family: "VujahdayScript";
-  src: url("./Fonts/VujahdayScript.ttf");
+  src: url("../Fonts/VujahdayScript.ttf");
 }
 
 @media only screen and (max-width: 700px) {
