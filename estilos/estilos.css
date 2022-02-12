@@ -8,58 +8,6 @@
   src: url("../Fonts/VujahdayScript.ttf");
 }
 
-@media only screen and (max-width: 700px) {
-  .lista {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    width: 90%;
-    color: #ffffff;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .columna {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    background-color: coral;
-  }
-  .columna div {
-    border: solid black 2px;
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .formulario {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -258,5 +206,187 @@ body footer .copyr {
   padding: 25px;
   background-color: black;
   color: white;
+}
+
+@media only screen and (max-width: 700px) {
+  * {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+  }
+  body {
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(white));
+    background: linear-gradient(180deg, white 0%, white 100%);
+  }
+  body .navbar {
+    background-color: #000000;
+  }
+  body .nav-link {
+    font-family: 'LuxuriousRoman';
+    font-weight: bolder;
+    font-size: large;
+  }
+  body .icon {
+    width: 70px;
+    border-radius: 50%;
+  }
+  body .titulo {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: white;
+    background-color: #000000;
+  }
+  body .titulo .textoTitulo {
+    font-family: "rhyder";
+  }
+  body .titulo .sobreTitulo {
+    font-family: "display";
+    margin-top: 2px;
+    margin-bottom: 3px;
+  }
+  body .historia {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 10px;
+  }
+  body .historia .textoHistoria {
+    margin-left: 1%;
+    margin-right: 1%;
+    padding: 5px;
+    font-family: cursive;
+  }
+  body .fotos {
+    width: 100%;
+  }
+  body .fotos div {
+    /* cualquier altura mayor que el total de sumar la anchura de las img */
+    width: 100%;
+    margin-bottom: 2px;
+    /* para evitar el margen superior de la primera fila*/
+  }
+  body .fotos .columna {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .fotos .columna div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .fotos .columna div img {
+    height: 200px;
+    padding: 4px;
+  }
+  body .fotos .columna div img:hover {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    -webkit-transition-duration: 2s;
+            transition-duration: 2s;
+  }
+  body .fotos .columna div p {
+    font-family: 'LuxuriousRoman';
+    font-weight: bolder;
+    color: black;
+  }
+  body footer {
+    padding: 2%;
+    background-color: black;
+    width: 100%;
+  }
+  body footer .logoContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body footer .logoContainer p {
+    margin-left: 15px;
+    color: white;
+    font-size: large;
+  }
+  body footer .social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-top: 15px;
+  }
+  body footer .copyr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 15px;
+  }
+  .cardContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 10px;
+  }
+  .cardContainer .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 15px;
+  }
+  .cardContainer .card .imageCard {
+    width: 100%;
+  }
+  .cardContainer .card .imageCard img {
+    width: 100%;
+  }
+  .cardContainer .card .textCard {
+    width: 100%;
+    padding: 15px;
+    background-color: black;
+    color: white;
+  }
 }
 /*# sourceMappingURL=estilos.css.map */
