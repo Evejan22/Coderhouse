@@ -42,11 +42,10 @@
       margin-top: $margin;
     }
     .historia {
-      @include history(100%, flex , 20px);
+      @include history(100%, flex , 0px);
       .textoHistoria {
         margin-left: 3%;
         margin-right: 3%;
-        padding: 5px;
         font-family: cursive;
       }
     }
@@ -64,13 +63,14 @@
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto;
         grid-gap: 1rem;
-        padding: 1rem;
+        margin-top: 15px;
         div {
           display: flex;
           flex-direction: column;
           align-items: center;
           img {
             height: 200px;
+            max-width: 90%;
             padding: 4px;
             &:hover {
               transform: scale(2);
