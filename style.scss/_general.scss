@@ -110,6 +110,12 @@
         margin-top: 15px;
       }
     }
+    .formulario{
+      fieldset{
+        display: flex;
+        flex-direction: column;
+      }
+    }
   }
   .cardContainer{
     display: flex;
